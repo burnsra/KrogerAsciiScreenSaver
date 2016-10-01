@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		00038A951D9FE68800F94610 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 00038A941D9FE68800F94610 /* html */; };
+		00038A971D9FE6CF00F94610 /* SwiftScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00038A871D9FDB9500F94610 /* SwiftScreenSaverTemplate.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftScreenSaverTemplate.saver; sourceTree = BUILT_PRODUCTS_DIR; };
 		00038A8E1D9FDB9500F94610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00038A941D9FE68800F94610 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
+		00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftScreenSaverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				00038A941D9FE68800F94610 /* html */,
 				00038A8E1D9FDB9500F94610 /* Info.plist */,
+				00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */,
 			);
 			path = SwiftScreenSaverTemplate;
 			sourceTree = "<group>";
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					00038A861D9FDB9500F94610 = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00038A971D9FE6CF00F94610 /* SwiftScreenSaverView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +232,16 @@
 		00038A921D9FDB9500F94610 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SwiftScreenSaverTemplate/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.SwiftScreenSaverTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -239,11 +249,15 @@
 		00038A931D9FDB9500F94610 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SwiftScreenSaverTemplate/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.SwiftScreenSaverTemplate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
