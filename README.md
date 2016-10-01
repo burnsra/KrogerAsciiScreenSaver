@@ -18,18 +18,18 @@ Screen Saver - Animation
 
 ## Customizing
 
-Replace the instance of "NewSwiftScreenSaverProject" in the first command below with your desired project name.
+Replace the instance of "NewSwiftScreenSaver" in the first command below with your desired project name.
 
 ```sh
-$ export newProjectName="NewSwiftScreenSaverProject"
-$ git clone https://github.com/burnsra/SwiftScreenSaverTemplate.git "$newProjectName"
-$ cd "$newProjectName"
-$ git mv SwiftScreenSaverTemplate "$newProjectName"
-$ git mv SwiftScreenSaverTemplate.xcodeproj "$newProjectName".xcodeproj
-$ find README.md "$newProjectName" "$newProjectName".xcodeproj -prune -o -type f -print0 | xargs -0 sed -i "" "s/SwiftScreenSaverTemplate/$newProjectName/g"
+$ export newScreenSaverName="NewSwiftScreenSaver"
+$ git clone https://github.com/burnsra/SwiftScreenSaverTemplate.git "$newScreenSaverName"
+$ cd "$newScreenSaverName"
+$ git mv SwiftScreenSaverTemplate "$newScreenSaverName"
+$ git mv SwiftScreenSaverTemplate.xcodeproj "$newScreenSaverName".xcodeproj
+$ find README.md "$newScreenSaverName" "$newScreenSaverName".xcodeproj -path "*html*" -prune -o -type f -print0 | xargs -0 sed -i "" "s/SwiftScreenSaverTemplate/$newScreenSaverName/g"
 $ git add -A
-$ git commit -m "Renamed template screen saver project to "$newProjectName
-$ unset newProjectName
+$ git commit -m "Renamed template screen saver project to "$newScreenSaverName
+$ unset newScreenSaverName
 ```
 
 ## Acknowledgements
