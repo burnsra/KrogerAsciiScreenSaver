@@ -9,7 +9,21 @@
 /* Begin PBXBuildFile section */
 		00038A951D9FE68800F94610 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 00038A941D9FE68800F94610 /* html */; };
 		00038A971D9FE6CF00F94610 /* SwiftScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */; };
+		00038A991D9FEC2300F94610 /* SwiftScreenSaverTemplate.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00038A871D9FDB9500F94610 /* SwiftScreenSaverTemplate.saver */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00038A981D9FEC0D00F94610 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Screen Savers";
+			dstSubfolderSpec = 0;
+			files = (
+				00038A991D9FEC2300F94610 /* SwiftScreenSaverTemplate.saver in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00038A871D9FDB9500F94610 /* SwiftScreenSaverTemplate.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftScreenSaverTemplate.saver; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +90,7 @@
 				00038A831D9FDB9500F94610 /* Frameworks */,
 				00038A841D9FDB9500F94610 /* Headers */,
 				00038A851D9FDB9500F94610 /* Resources */,
+				00038A981D9FEC0D00F94610 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -281,6 +296,7 @@
 				00038A931D9FDB9500F94610 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
