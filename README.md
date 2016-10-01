@@ -34,6 +34,7 @@ $ unset newScreenSaverName
 
 ## Acknowledgements
 
+- [octicons](https://octicons.github.com/) by [Github](https://github.com)
 - [octoscreen](https://github.com/orderedlist/octoscreen/) by [Steve Smith (orderedlist)](steve@github.com)
 
 ## Contributions
