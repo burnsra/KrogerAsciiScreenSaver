@@ -26,7 +26,7 @@ $ git clone https://github.com/burnsra/SwiftScreenSaverTemplate.git "$newProject
 $ cd "$newProjectName"
 $ git mv SwiftScreenSaverTemplate "$newProjectName"
 $ git mv SwiftScreenSaverTemplate.xcodeproj "$newProjectName".xcodeproj
-$ find README.md "$newProjectName" "$newProjectName".xcodeproj -path "*Assets.xcassets*" -prune -o -type f -print0 | xargs -0 sed -i "" "s/SwiftScreenSaverTemplate/$newProjectName/g"
+$ find README.md "$newProjectName" "$newProjectName".xcodeproj -prune -o -type f -print0 | xargs -0 sed -i "" "s/SwiftScreenSaverTemplate/$newProjectName/g"
 $ git add -A
 $ git commit -m "Renamed template screen saver project to "$newProjectName
 $ unset newProjectName
