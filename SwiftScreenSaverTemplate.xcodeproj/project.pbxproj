@@ -6,15 +6,8 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		00038A8B1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00038A8A1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.h */; };
-		00038A8D1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00038A8C1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.m */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		00038A871D9FDB9500F94610 /* SwiftScreenSaverTemplate.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftScreenSaverTemplate.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		00038A8A1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftScreenSaverTemplateView.h; sourceTree = "<group>"; };
-		00038A8C1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftScreenSaverTemplateView.m; sourceTree = "<group>"; };
 		00038A8E1D9FDB9500F94610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,8 +41,6 @@
 		00038A891D9FDB9500F94610 /* SwiftScreenSaverTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				00038A8A1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.h */,
-				00038A8C1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.m */,
 				00038A8E1D9FDB9500F94610 /* Info.plist */,
 			);
 			path = SwiftScreenSaverTemplate;
@@ -62,7 +53,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00038A8B1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +124,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00038A8D1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
