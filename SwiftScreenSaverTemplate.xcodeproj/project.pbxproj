@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00038A8B1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 00038A8A1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.h */; };
+		00038A8D1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00038A8C1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00038A871D9FDB9500F94610 /* SwiftScreenSaverTemplate.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftScreenSaverTemplate.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		00038A8A1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftScreenSaverTemplateView.h; sourceTree = "<group>"; };
+		00038A8C1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftScreenSaverTemplateView.m; sourceTree = "<group>"; };
+		00038A8E1D9FDB9500F94610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00038A831D9FDB9500F94610 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00038A7D1D9FDB9500F94610 = {
+			isa = PBXGroup;
+			children = (
+				00038A891D9FDB9500F94610 /* SwiftScreenSaverTemplate */,
+				00038A881D9FDB9500F94610 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00038A881D9FDB9500F94610 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00038A871D9FDB9500F94610 /* SwiftScreenSaverTemplate.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00038A891D9FDB9500F94610 /* SwiftScreenSaverTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				00038A8A1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.h */,
+				00038A8C1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.m */,
+				00038A8E1D9FDB9500F94610 /* Info.plist */,
+			);
+			path = SwiftScreenSaverTemplate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		00038A841D9FDB9500F94610 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00038A8B1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00038A861D9FDB9500F94610 /* SwiftScreenSaverTemplate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00038A911D9FDB9500F94610 /* Build configuration list for PBXNativeTarget "SwiftScreenSaverTemplate" */;
+			buildPhases = (
+				00038A821D9FDB9500F94610 /* Sources */,
+				00038A831D9FDB9500F94610 /* Frameworks */,
+				00038A841D9FDB9500F94610 /* Headers */,
+				00038A851D9FDB9500F94610 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftScreenSaverTemplate;
+			productName = SwiftScreenSaverTemplate;
+			productReference = 00038A871D9FDB9500F94610 /* SwiftScreenSaverTemplate.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00038A7E1D9FDB9500F94610 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Robert Burns";
+				TargetAttributes = {
+					00038A861D9FDB9500F94610 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 00038A811D9FDB9500F94610 /* Build configuration list for PBXProject "SwiftScreenSaverTemplate" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00038A7D1D9FDB9500F94610;
+			productRefGroup = 00038A881D9FDB9500F94610 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00038A861D9FDB9500F94610 /* SwiftScreenSaverTemplate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00038A851D9FDB9500F94610 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00038A821D9FDB9500F94610 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00038A8D1D9FDB9500F94610 /* SwiftScreenSaverTemplateView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00038A8F1D9FDB9500F94610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		00038A901D9FDB9500F94610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		00038A921D9FDB9500F94610 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftScreenSaverTemplate/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.SwiftScreenSaverTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		00038A931D9FDB9500F94610 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SwiftScreenSaverTemplate/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.SwiftScreenSaverTemplate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00038A811D9FDB9500F94610 /* Build configuration list for PBXProject "SwiftScreenSaverTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00038A8F1D9FDB9500F94610 /* Debug */,
+				00038A901D9FDB9500F94610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00038A911D9FDB9500F94610 /* Build configuration list for PBXNativeTarget "SwiftScreenSaverTemplate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00038A921D9FDB9500F94610 /* Debug */,
+				00038A931D9FDB9500F94610 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00038A7E1D9FDB9500F94610 /* Project object */;
+}
