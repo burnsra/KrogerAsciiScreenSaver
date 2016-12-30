@@ -10,6 +10,8 @@
 		00038A951D9FE68800F94610 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 00038A941D9FE68800F94610 /* html */; };
 		00038A971D9FE6CF00F94610 /* SwiftScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */; };
 		00038A991D9FEC2300F94610 /* SwiftScreenSaverTemplate.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00038A871D9FDB9500F94610 /* SwiftScreenSaverTemplate.saver */; };
+		006C5A7D1E16B3C3008098A0 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006C5A7B1E16B3C3008098A0 /* thumbnail@2x.png */; };
+		006C5A7F1E16B7CE008098A0 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 006C5A7E1E16B7CE008098A0 /* thumbnail.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,8 @@
 		00038A8E1D9FDB9500F94610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00038A941D9FE68800F94610 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftScreenSaverView.swift; sourceTree = "<group>"; };
+		006C5A7B1E16B3C3008098A0 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		006C5A7E1E16B7CE008098A0 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 		00038A891D9FDB9500F94610 /* SwiftScreenSaverTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				006C5A7E1E16B7CE008098A0 /* thumbnail.png */,
+				006C5A7B1E16B3C3008098A0 /* thumbnail@2x.png */,
 				00038A941D9FE68800F94610 /* html */,
 				00038A8E1D9FDB9500F94610 /* Info.plist */,
 				00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */,
@@ -140,6 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				00038A951D9FE68800F94610 /* html in Resources */,
+				006C5A7D1E16B3C3008098A0 /* thumbnail@2x.png in Resources */,
+				006C5A7F1E16B7CE008098A0 /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
