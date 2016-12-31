@@ -7,16 +7,20 @@
 //
 
 import Foundation
+import GCDWebServers
 import ScreenSaver
 import WebKit
 
 class SwiftScreenSaverView: ScreenSaverView {
 
     let ScreenSaverWebView: WebView = WebView(frame: NSZeroRect)
+    let webServer: GCDWebServer = GCDWebServer()
+    let webPort: UInt = UInt(arc4random_uniform(10) + 5550);
 
     fileprivate func initialize() {
         self.configureWebView()
         self.addSubview(self.ScreenSaverWebView)
+        self.webServer.addGETHandler(forBasePath: "/", directoryPath: "\(Bundle(for: type(of: self)).resourcePath!)/html", indexFilename: "index.html", cacheAge: 1000, allowRangeRequests: true)
     }
 
     deinit {
@@ -39,14 +43,14 @@ class SwiftScreenSaverView: ScreenSaverView {
 
     override func startAnimation() {
         super.startAnimation()
-
-        let url = String(format:"file://%@/html/index.html", Bundle(for: type(of: self)).resourcePath!).addingPercentEncoding(withAllowedCharacters: CharacterSet.urlPathAllowed)
-
-        self.ScreenSaverWebView.mainFrame.load(URLRequest(url: URL(string: url!)!))
+        NSLog("Starting screensaver on port \(webPort)")
+        self.webServer.start(withPort: webPort, bonjourName: nil)
+        self.ScreenSaverWebView.mainFrame.load(URLRequest(url: URL(string: "http://localhost:\(webPort)")!))
     }
 
     override func stopAnimation() {
         super.stopAnimation()
+        self.webServer.stop()
     }
 
     override func draw(_ rect: NSRect) {

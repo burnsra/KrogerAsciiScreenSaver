@@ -12,6 +12,8 @@
 		00038A991D9FEC2300F94610 /* SwiftScreenSaverTemplate.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00038A871D9FDB9500F94610 /* SwiftScreenSaverTemplate.saver */; };
 		006C5A7D1E16B3C3008098A0 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006C5A7B1E16B3C3008098A0 /* thumbnail@2x.png */; };
 		006C5A7F1E16B7CE008098A0 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 006C5A7E1E16B7CE008098A0 /* thumbnail.png */; };
+		006C5A821E1801EE008098A0 /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006C5A811E1801EE008098A0 /* GCDWebServers.framework */; };
+		006C5A841E1803D2008098A0 /* GCDWebServers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 006C5A811E1801EE008098A0 /* GCDWebServers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		006C5A831E1803C9008098A0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				006C5A841E1803D2008098A0 /* GCDWebServers.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +47,7 @@
 		00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftScreenSaverView.swift; sourceTree = "<group>"; };
 		006C5A7B1E16B3C3008098A0 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		006C5A7E1E16B7CE008098A0 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		006C5A811E1801EE008098A0 /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServers.framework; path = Carthage/Build/Mac/GCDWebServers.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006C5A821E1801EE008098A0 /* GCDWebServers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +65,7 @@
 		00038A7D1D9FDB9500F94610 = {
 			isa = PBXGroup;
 			children = (
+				006C5A801E1801EE008098A0 /* Frameworks */,
 				00038A891D9FDB9500F94610 /* SwiftScreenSaverTemplate */,
 				00038A881D9FDB9500F94610 /* Products */,
 			);
@@ -75,6 +91,14 @@
 			path = SwiftScreenSaverTemplate;
 			sourceTree = "<group>";
 		};
+		006C5A801E1801EE008098A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006C5A811E1801EE008098A0 /* GCDWebServers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -97,6 +121,7 @@
 				00038A841D9FDB9500F94610 /* Headers */,
 				00038A851D9FDB9500F94610 /* Resources */,
 				00038A981D9FEC0D00F94610 /* CopyFiles */,
+				006C5A831E1803C9008098A0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +286,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = SwiftScreenSaverTemplate/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -278,6 +307,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = SwiftScreenSaverTemplate/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
