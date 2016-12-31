@@ -9,14 +9,32 @@
 
     Saver.prototype.boxes = [];
 
-    Saver.prototype.icons = ['alert', 'alignment-align', 'alignment-aligned-to', 'alignment-unalign', 'arrow-down', 'arrow-left', 'arrow-right', 'arrow-small-down', 'arrow-small-left', 'arrow-small-right', 'arrow-small-up', 'arrow-up', 'beer', 'book', 'bookmark', 'briefcase', 'broadcast', 'browser', 'bug', 'calendar', 'check', 'checklist', 'chevron-down', 'chevron-left', 'chevron-right', 'chevron-up', 'circle-slash', 'circuit-board', 'clippy', 'clock', 'cloud-download', 'cloud-upload', 'code', 'color-mode', 'comment', 'comment-discussion', 'credit-card', 'dash', 'dashboard', 'database', 'device-camera', 'device-camera-video', 'device-desktop', 'device-mobile', 'diff', 'diff-added', 'diff-ignored', 'diff-modified', 'diff-removed', 'diff-renamed', 'ellipsis', 'eye', 'file-binary', 'file-code', 'file-directory', 'file-media', 'file-pdf', 'file-submodule', 'file-symlink-directory', 'file-symlink-file', 'file-text', 'file-zip', 'flame', 'fold', 'gear', 'gift', 'gist', 'gist-secret', 'git-branch', 'git-commit', 'git-compare', 'git-merge', 'git-pull-request', 'globe', 'graph', 'heart', 'history', 'home', 'horizontal-rule', 'hourglass', 'hubot', 'inbox', 'info', 'issue-closed', 'issue-opened', 'issue-reopened', 'jersey', 'jump-down', 'jump-left', 'jump-right', 'jump-up', 'key', 'keyboard', 'law', 'light-bulb', 'link', 'link-external', 'list-ordered', 'list-unordered', 'location', 'lock', 'mail', 'mail-read', 'mail-reply', 'mark-github', 'markdown', 'megaphone', 'mention', 'microscope', 'milestone', 'mirror', 'mortar-board', 'move-down', 'move-left', 'move-right', 'move-up', 'mute', 'no-newline', 'octoface', 'organization', 'package', 'paintcan', 'pencil', 'person', 'pin', 'playback-fast-forward', 'playback-pause', 'playback-play', 'playback-rewind', 'plug', 'plus', 'podium', 'primitive-dot', 'primitive-square', 'pulse', 'puzzle', 'question', 'quote', 'radio-tower', 'repo', 'repo-clone', 'repo-force-push', 'repo-forked', 'repo-pull', 'repo-push', 'rocket', 'rss', 'ruby', 'screen-full', 'screen-normal', 'search', 'server', 'settings', 'sign-in', 'sign-out', 'split', 'squirrel', 'star', 'steps', 'stop', 'sync', 'tag', 'telescope', 'terminal', 'three-bars', 'thumbsdown', 'thumbsup', 'tools', 'trashcan', 'triangle-down', 'triangle-left', 'triangle-right', 'triangle-up', 'unfold', 'unmute', 'versions', 'x', 'zap'];
+    Saver.prototype.icons = [];
 
     Saver.prototype.start = function() {
       this.container = document.querySelector('#screen');
+      this.logoIcon = false;
+      this.setIcons();
       this.setSize();
       this.drawBoxes();
       return setInterval(this.flashIcon, 100);
     };
+
+    Saver.prototype.setIcons = function() {
+      $.ajaxSetup({ async: false });
+      var _icons = new Array;
+      var jqxhr = $.getJSON('selection.json', function(json){
+        for(var i = 0; i < json.icons.length; i++) {
+          var obj = json.icons[i];
+          _icons.push(obj.properties.name);
+        }
+      });
+      this.icons = _icons;
+      if( $.inArray('logo-icomoon', this.icons) != -1) {
+           this.logoIcon = true;
+           this.icons.splice(this.icons.indexOf('logo-icomoon'), 1);
+      }
+    }
 
     Saver.prototype.setSize = function() {
       var left, top;
@@ -52,14 +70,14 @@
           for (col = _j = 1, _ref1 = this.cols; 1 <= _ref1 ? _j <= _ref1 : _j >= _ref1; col = 1 <= _ref1 ? ++_j : --_j) {
             box = document.createElement('div');
             box.classList.add('octicon-mega');
-            if (row === Math.ceil(this.rows / 2) && (col === this.cols / 2 || col === (this.cols / 2) + 1)) {
+            if (this.logoIcon && row === Math.ceil(this.rows / 2) && (col === this.cols / 2 || col === (this.cols / 2) + 1)) {
               if (col !== (this.cols / 2) + 1) {
                 box.classList.add('logo');
-                box.classList.add('octicon-logo-github');
+                box.classList.add('icon-logo-icomoon');
               }
             } else {
               box.classList.add('icon');
-              box.classList.add('octicon-' + this.icons[Math.floor(Math.random() * this.icons.length)]);
+              box.classList.add('icon-' + this.icons[Math.floor(Math.random() * this.icons.length)]);
             }
             _results1.push(this.container.appendChild(box));
           }
