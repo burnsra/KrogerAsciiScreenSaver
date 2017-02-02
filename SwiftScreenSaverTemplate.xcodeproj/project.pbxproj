@@ -19,6 +19,16 @@
 		006C5A841E1803D2008098A0 /* GCDWebServers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 006C5A811E1801EE008098A0 /* GCDWebServers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0028B9E91E43B039009C3A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00038A7E1D9FDB9500F94610 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00038A861D9FDB9500F94610;
+			remoteInfo = SwiftScreenSaverTemplate;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		00038A981D9FEC0D00F94610 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -171,6 +181,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				0028B9EA1E43B039009C3A68 /* PBXTargetDependency */,
 			);
 			name = Runner;
 			productName = Runner;
@@ -258,6 +269,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0028B9EA1E43B039009C3A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00038A861D9FDB9500F94610 /* SwiftScreenSaverTemplate */;
+			targetProxy = 0028B9E91E43B039009C3A68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		005F60911E43851A008431B8 /* MainMenu.xib */ = {
@@ -460,6 +479,7 @@
 				005F60961E43851A008431B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
