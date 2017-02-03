@@ -1,6 +1,6 @@
 //
 //  ConfigureSheet.swift
-//  SwiftScreenSaverTemplate
+//  KrogerAscii
 //
 //  Created by Robert Burns on 2/2/17.
 //  Copyright © 2017 Robert Burns. All rights reserved.

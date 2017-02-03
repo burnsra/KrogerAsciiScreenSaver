@@ -1,6 +1,6 @@
 //
-//  SwiftScreenSaverView.swift
-//  SwiftScreenSaverTemplate
+//  KrogerAsciiView.swift
+//  KrogerAscii
 //
 //  Created by Robert Burns on 10/1/16.
 //  Copyright © 2016 Robert Burns. All rights reserved.
@@ -11,7 +11,7 @@ import GCDWebServers
 import ScreenSaver
 import WebKit
 
-class SwiftScreenSaverView: ScreenSaverView {
+class KrogerAsciiView: ScreenSaverView {
 
     let ScreenSaverWebView: WebView = WebView(frame: NSZeroRect)
     let webServer: GCDWebServer = GCDWebServer()

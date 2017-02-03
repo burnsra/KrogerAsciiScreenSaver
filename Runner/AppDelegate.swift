@@ -23,7 +23,7 @@ class AppDelegate: NSObject {
 
     func setupAndStartAnimation()
     {
-        let saverName = UserDefaults.standard.string(forKey: "saver") ?? "Swift Template"
+        let saverName = UserDefaults.standard.string(forKey: "saver") ?? "Kroger Ascii"
         guard let saverBundle = loadSaverBundle(saverName) else {
             NSLog("Can't find or load bundle for saver named \(saverName).")
             return

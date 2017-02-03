@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00038A951D9FE68800F94610 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 00038A941D9FE68800F94610 /* html */; };
-		00038A971D9FE6CF00F94610 /* SwiftScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */; };
-		00038A991D9FEC2300F94610 /* Swift Template.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00038A871D9FDB9500F94610 /* Swift Template.saver */; };
+		00038A971D9FE6CF00F94610 /* KrogerAsciiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00038A961D9FE6CF00F94610 /* KrogerAsciiView.swift */; };
+		00038A991D9FEC2300F94610 /* Kroger Ascii.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00038A871D9FDB9500F94610 /* Kroger Ascii.saver */; };
 		0028B9ED1E43D726009C3A68 /* ConfigureSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028B9EB1E43D726009C3A68 /* ConfigureSheet.swift */; };
 		0028B9EE1E43D726009C3A68 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0028B9EC1E43D726009C3A68 /* ConfigureSheet.xib */; };
 		005F608E1E43851A008431B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F608D1E43851A008431B8 /* AppDelegate.swift */; };
@@ -27,7 +27,7 @@
 			containerPortal = 00038A7E1D9FDB9500F94610 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00038A861D9FDB9500F94610;
-			remoteInfo = SwiftScreenSaverTemplate;
+			remoteInfo = KrogerAscii;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -38,7 +38,7 @@
 			dstPath = "~/Library/Screen Savers";
 			dstSubfolderSpec = 0;
 			files = (
-				00038A991D9FEC2300F94610 /* Swift Template.saver in CopyFiles */,
+				00038A991D9FEC2300F94610 /* Kroger Ascii.saver in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,10 +56,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00038A871D9FDB9500F94610 /* Swift Template.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Template.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00038A871D9FDB9500F94610 /* Kroger Ascii.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kroger Ascii.saver"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00038A8E1D9FDB9500F94610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00038A941D9FE68800F94610 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
-		00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftScreenSaverView.swift; sourceTree = "<group>"; };
+		00038A961D9FE6CF00F94610 /* KrogerAsciiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KrogerAsciiView.swift; sourceTree = "<group>"; };
 		0028B9EB1E43D726009C3A68 /* ConfigureSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureSheet.swift; sourceTree = "<group>"; };
 		0028B9EC1E43D726009C3A68 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		005F608B1E43851A008431B8 /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,7 +96,7 @@
 			children = (
 				006C5A801E1801EE008098A0 /* Frameworks */,
 				005F608C1E43851A008431B8 /* Runner */,
-				00038A891D9FDB9500F94610 /* SwiftScreenSaverTemplate */,
+				00038A891D9FDB9500F94610 /* KrogerAscii */,
 				00038A881D9FDB9500F94610 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -104,13 +104,13 @@
 		00038A881D9FDB9500F94610 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00038A871D9FDB9500F94610 /* Swift Template.saver */,
+				00038A871D9FDB9500F94610 /* Kroger Ascii.saver */,
 				005F608B1E43851A008431B8 /* Runner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00038A891D9FDB9500F94610 /* SwiftScreenSaverTemplate */ = {
+		00038A891D9FDB9500F94610 /* KrogerAscii */ = {
 			isa = PBXGroup;
 			children = (
 				006C5A7E1E16B7CE008098A0 /* thumbnail.png */,
@@ -119,9 +119,9 @@
 				00038A8E1D9FDB9500F94610 /* Info.plist */,
 				0028B9EB1E43D726009C3A68 /* ConfigureSheet.swift */,
 				0028B9EC1E43D726009C3A68 /* ConfigureSheet.xib */,
-				00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */,
+				00038A961D9FE6CF00F94610 /* KrogerAsciiView.swift */,
 			);
-			path = SwiftScreenSaverTemplate;
+			path = KrogerAscii;
 			sourceTree = "<group>";
 		};
 		005F608C1E43851A008431B8 /* Runner */ = {
@@ -156,9 +156,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		00038A861D9FDB9500F94610 /* Swift Template */ = {
+		00038A861D9FDB9500F94610 /* Kroger Ascii */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00038A911D9FDB9500F94610 /* Build configuration list for PBXNativeTarget "Swift Template" */;
+			buildConfigurationList = 00038A911D9FDB9500F94610 /* Build configuration list for PBXNativeTarget "Kroger Ascii" */;
 			buildPhases = (
 				00038A821D9FDB9500F94610 /* Sources */,
 				00038A831D9FDB9500F94610 /* Frameworks */,
@@ -171,9 +171,9 @@
 			);
 			dependencies = (
 			);
-			name = "Swift Template";
-			productName = SwiftScreenSaverTemplate;
-			productReference = 00038A871D9FDB9500F94610 /* Swift Template.saver */;
+			name = "Kroger Ascii";
+			productName = KrogerAscii;
+			productReference = 00038A871D9FDB9500F94610 /* Kroger Ascii.saver */;
 			productType = "com.apple.product-type.bundle";
 		};
 		005F608A1E43851A008431B8 /* Runner */ = {
@@ -216,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 00038A811D9FDB9500F94610 /* Build configuration list for PBXProject "SwiftScreenSaverTemplate" */;
+			buildConfigurationList = 00038A811D9FDB9500F94610 /* Build configuration list for PBXProject "KrogerAscii" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,7 +229,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00038A861D9FDB9500F94610 /* Swift Template */,
+				00038A861D9FDB9500F94610 /* Kroger Ascii */,
 				005F608A1E43851A008431B8 /* Runner */,
 			);
 		};
@@ -263,7 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00038A971D9FE6CF00F94610 /* SwiftScreenSaverView.swift in Sources */,
+				00038A971D9FE6CF00F94610 /* KrogerAsciiView.swift in Sources */,
 				0028B9ED1E43D726009C3A68 /* ConfigureSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +281,7 @@
 /* Begin PBXTargetDependency section */
 		0028B9EA1E43B039009C3A68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 00038A861D9FDB9500F94610 /* Swift Template */;
+			target = 00038A861D9FDB9500F94610 /* Kroger Ascii */;
 			targetProxy = 0028B9E91E43B039009C3A68 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -398,10 +398,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = SwiftScreenSaverTemplate/Info.plist;
+				INFOPLIST_FILE = KrogerAscii/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.SwiftScreenSaverTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.KrogerAscii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -419,10 +419,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
-				INFOPLIST_FILE = SwiftScreenSaverTemplate/Info.plist;
+				INFOPLIST_FILE = KrogerAscii/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.SwiftScreenSaverTemplate;
+				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.KrogerAscii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
@@ -462,7 +462,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00038A811D9FDB9500F94610 /* Build configuration list for PBXProject "SwiftScreenSaverTemplate" */ = {
+		00038A811D9FDB9500F94610 /* Build configuration list for PBXProject "KrogerAscii" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00038A8F1D9FDB9500F94610 /* Debug */,
@@ -471,7 +471,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00038A911D9FDB9500F94610 /* Build configuration list for PBXNativeTarget "Swift Template" */ = {
+		00038A911D9FDB9500F94610 /* Build configuration list for PBXNativeTarget "Kroger Ascii" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00038A921D9FDB9500F94610 /* Debug */,
