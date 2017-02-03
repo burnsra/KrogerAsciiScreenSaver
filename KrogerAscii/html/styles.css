@@ -6,58 +6,36 @@ html, body {
   overflow: hidden; }
 
 body {
-  -webkit-animation: colors linear 120s infinite;
-  font-family: Octicons;
-  font-size: 32px;
-  color: #fff; }
+  background-color: #292B37;
+  color: #fff;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif !important;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 #screen {
-  position: absolute; }
+  -webkit-mask-image: url(logo_kroger.png);
+  -webkit-mask-position-x: center;
+  -wwebkit-mask-position-y: center;
+  -webkit-mask-repeat: no-repeat;
+  position: absolute;
+}
 
-.icon, .logo {
-  text-align: center; }
+.hidden {
+    visibility:hidden
+}
 
 .icon {
-  width: 48px;
-  height: 48px;
+  width: 11px;
+  height: 13px;
   float: left;
-  opacity: 0.1;
-  overflow: hidden; }
-
-.logo {
-  width: 96px;
-  height: 48px;
-  float: left;
-  opacity: 0.75;
-  box-sizing: border-box; }
-
-.fading {
-  -webkit-animation: fading 4s 1; }
-
-@-webkit-keyframes fading {
-  0% {
-    opacity: 0.1; }
-
-  50% {
-    opacity: 0.8; }
-
-  100% {
-    opacity: 0.1; } }
-@-webkit-keyframes colors {
-  0% {
-    background-color: #844BB2; }
-
-  20% {
-    background-color: #F2443F; }
-
-  40% {
-    background-color: #FFC028; }
-
-  60% {
-    background-color: #43C4B9; }
-
-  80% {
-    background-color: #27A5E9; }
-
-  100% {
-    background-color: #844BB2; } }
+  overflow: hidden;
+  text-align: center;
+}
