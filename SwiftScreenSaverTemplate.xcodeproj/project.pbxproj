@@ -10,6 +10,8 @@
 		00038A951D9FE68800F94610 /* html in Resources */ = {isa = PBXBuildFile; fileRef = 00038A941D9FE68800F94610 /* html */; };
 		00038A971D9FE6CF00F94610 /* SwiftScreenSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */; };
 		00038A991D9FEC2300F94610 /* SwiftScreenSaverTemplate.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00038A871D9FDB9500F94610 /* SwiftScreenSaverTemplate.saver */; };
+		0028B9ED1E43D726009C3A68 /* ConfigureSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028B9EB1E43D726009C3A68 /* ConfigureSheet.swift */; };
+		0028B9EE1E43D726009C3A68 /* ConfigureSheet.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0028B9EC1E43D726009C3A68 /* ConfigureSheet.xib */; };
 		005F608E1E43851A008431B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F608D1E43851A008431B8 /* AppDelegate.swift */; };
 		005F60901E43851A008431B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005F608F1E43851A008431B8 /* Assets.xcassets */; };
 		005F60931E43851A008431B8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005F60911E43851A008431B8 /* MainMenu.xib */; };
@@ -58,6 +60,8 @@
 		00038A8E1D9FDB9500F94610 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00038A941D9FE68800F94610 /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftScreenSaverView.swift; sourceTree = "<group>"; };
+		0028B9EB1E43D726009C3A68 /* ConfigureSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigureSheet.swift; sourceTree = "<group>"; };
+		0028B9EC1E43D726009C3A68 /* ConfigureSheet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigureSheet.xib; sourceTree = "<group>"; };
 		005F608B1E43851A008431B8 /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		005F608D1E43851A008431B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005F608F1E43851A008431B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				006C5A7B1E16B3C3008098A0 /* thumbnail@2x.png */,
 				00038A941D9FE68800F94610 /* html */,
 				00038A8E1D9FDB9500F94610 /* Info.plist */,
+				0028B9EB1E43D726009C3A68 /* ConfigureSheet.swift */,
+				0028B9EC1E43D726009C3A68 /* ConfigureSheet.xib */,
 				00038A961D9FE6CF00F94610 /* SwiftScreenSaverView.swift */,
 			);
 			path = SwiftScreenSaverTemplate;
@@ -236,6 +242,7 @@
 			files = (
 				00038A951D9FE68800F94610 /* html in Resources */,
 				006C5A7D1E16B3C3008098A0 /* thumbnail@2x.png in Resources */,
+				0028B9EE1E43D726009C3A68 /* ConfigureSheet.xib in Resources */,
 				006C5A7F1E16B7CE008098A0 /* thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00038A971D9FE6CF00F94610 /* SwiftScreenSaverView.swift in Sources */,
+				0028B9ED1E43D726009C3A68 /* ConfigureSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

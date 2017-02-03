@@ -16,6 +16,10 @@ class AppDelegate: NSObject {
 
     var view: ScreenSaverView!
 
+    @IBAction func showPreferences(_ sender: NSObject!)
+    {
+        window.beginSheet(view.configureSheet()!, completionHandler: nil)
+    }
 
     func setupAndStartAnimation()
     {

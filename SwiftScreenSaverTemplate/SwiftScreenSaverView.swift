@@ -62,11 +62,12 @@ class SwiftScreenSaverView: ScreenSaverView {
     }
 
     override func hasConfigureSheet() -> Bool {
-        return false
+        return true
     }
 
     override func configureSheet() -> NSWindow? {
-        return nil
+        let controller = ConfigureSheet.sharedInstance
+        return controller.window
     }
 
 }
