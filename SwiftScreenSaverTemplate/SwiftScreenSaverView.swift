@@ -15,7 +15,7 @@ class SwiftScreenSaverView: ScreenSaverView {
 
     let ScreenSaverWebView: WebView = WebView(frame: NSZeroRect)
     let webServer: GCDWebServer = GCDWebServer()
-    let webPort: UInt = UInt(arc4random_uniform(10) + 5550);
+    let webPort: UInt = UInt(arc4random_uniform(50) + 49000)
 
     fileprivate func initialize() {
         self.configureWebView()
