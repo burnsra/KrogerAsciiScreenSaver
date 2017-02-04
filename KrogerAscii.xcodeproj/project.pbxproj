@@ -399,7 +399,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = KrogerAscii/Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.KrogerAscii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,7 +420,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				INFOPLIST_FILE = KrogerAscii/Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.robertburns.osx.KrogerAscii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
