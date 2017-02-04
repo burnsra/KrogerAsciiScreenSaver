@@ -1,8 +1,8 @@
-# KrogerAscii
+# Kroger Ascii
 
 ## Overview
 
-**KrogerAscii** is a MacOS screen saver written in Swift.  The example HTML content is based upon octoscreen, referenced in the [acknowledgements](#acknowledgements) section below.  This screen saver template provides the following features:
+**Kroger Ascii** is a MacOS screen saver written in Swift.  This screen saver template provides the following features:
 
 - Embedded HTML based screen saver
 
@@ -12,29 +12,13 @@ System Preferences - Screen Saver
 
 <img style="max-width:100%;" src="./assets/system_preferences_screen_saver.png" />
 
-Screen Saver - Animation
+Screen Saver - Screenshot
 
-<img style="max-width:100%;" src="./assets/screen_saver_animation.gif" />
-
-## Customizing
-
-Replace the instance of "NewKrogerAscii" in the first command below with your desired project name.
-
-```sh
-$ export newScreenSaverName="NewKrogerAscii"
-$ git clone https://github.com/burnsra/KrogerAscii.git "$newScreenSaverName"
-$ cd "$newScreenSaverName"
-$ git mv KrogerAscii "$newScreenSaverName"
-$ git mv KrogerAscii.xcodeproj "$newScreenSaverName".xcodeproj
-$ find README.md "$newScreenSaverName" "$newScreenSaverName".xcodeproj -path "*html*" -prune -o -type f -print0 | xargs -0 sed -i "" "s/KrogerAscii/$newScreenSaverName/g"
-$ git add -A
-$ git commit -m "Renamed template screen saver project to "$newScreenSaverName
-$ unset newScreenSaverName
-```
+<img style="max-width:100%;" src="./assets/screen_saver_screenshot.png" />
 
 ## Acknowledgements
 
-- [octicons](https://octicons.github.com/) by [Github](https://github.com)
+- [icomoon](https://icomoon.io/) by [Roonas](http://roonas.com/)
 - [octoscreen](https://github.com/orderedlist/octoscreen/) by [Steve Smith (orderedlist)](steve@github.com)
 
 ## Contributions
@@ -43,4 +27,4 @@ Do you want to improve the app or add any useful features? Please go ahead and c
 
 ## License
 
-[MIT](https://github.com/burnsra/KrogerAscii/blob/master/LICENSE) © Robert Burns
+[MIT](https://github.com/burnsra/KrogerAsciiScreenSaver/blob/master/LICENSE) © Robert Burns
