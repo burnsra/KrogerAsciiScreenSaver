@@ -17,8 +17,6 @@
 		005F60931E43851A008431B8 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 005F60911E43851A008431B8 /* MainMenu.xib */; };
 		006C5A7D1E16B3C3008098A0 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 006C5A7B1E16B3C3008098A0 /* thumbnail@2x.png */; };
 		006C5A7F1E16B7CE008098A0 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 006C5A7E1E16B7CE008098A0 /* thumbnail.png */; };
-		006C5A821E1801EE008098A0 /* GCDWebServers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006C5A811E1801EE008098A0 /* GCDWebServers.framework */; };
-		006C5A841E1803D2008098A0 /* GCDWebServers.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 006C5A811E1801EE008098A0 /* GCDWebServers.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +40,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		006C5A831E1803C9008098A0 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				006C5A841E1803D2008098A0 /* GCDWebServers.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -69,7 +56,6 @@
 		005F60941E43851A008431B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		006C5A7B1E16B3C3008098A0 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		006C5A7E1E16B7CE008098A0 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
-		006C5A811E1801EE008098A0 /* GCDWebServers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDWebServers.framework; path = Carthage/Build/Mac/GCDWebServers.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006C5A821E1801EE008098A0 /* GCDWebServers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +79,6 @@
 		00038A7D1D9FDB9500F94610 = {
 			isa = PBXGroup;
 			children = (
-				006C5A801E1801EE008098A0 /* Frameworks */,
 				005F608C1E43851A008431B8 /* Runner */,
 				00038A891D9FDB9500F94610 /* KrogerAscii */,
 				00038A881D9FDB9500F94610 /* Products */,
@@ -135,14 +119,6 @@
 			path = Runner;
 			sourceTree = "<group>";
 		};
-		006C5A801E1801EE008098A0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				006C5A811E1801EE008098A0 /* GCDWebServers.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -165,7 +141,6 @@
 				00038A841D9FDB9500F94610 /* Headers */,
 				00038A851D9FDB9500F94610 /* Resources */,
 				00038A981D9FEC0D00F94610 /* CopyFiles */,
-				006C5A831E1803C9008098A0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -394,10 +369,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = KrogerAscii/Info.plist;
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -415,10 +386,6 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
 				INFOPLIST_FILE = KrogerAscii/Info.plist;
 				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
