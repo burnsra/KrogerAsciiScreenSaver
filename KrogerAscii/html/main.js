@@ -83,7 +83,6 @@
         Saver.prototype.showSymbol = function() {
             var boxes;
             boxes = $(".icon.hidden").get().sort(function(){ return Math.round(Math.random())-0.5 }).slice(0,200);
-            console.log(boxes.length);
             if ( boxes.length == 0 ) {
                 clearInterval(1);
                 return true;
@@ -95,17 +94,19 @@
         
         Saver.prototype.changeSymbol = function() {
             var boxes;
-            boxes = $(".icon:not(.changing)").get().sort(function() { return Math.round(Math.random())-0.5 }).slice(0,400);
-            $(boxes).each(function() {
-                $(this).addClass("changing");
-                $(this).fadeTo( "slow", 0, function() {
-                    $(this).html(Saver.prototype.words[Math.floor(Math.random() * Saver.prototype.words.length)]);
-                    $(this).css("color",Saver.prototype.colors[Math.floor(Math.random() * Saver.prototype.colors.length)]);
+            boxes = $(".icon:not(.changed)").get().sort(function() { return Math.round(Math.random())-0.5 }).slice(0,400);
+            if ( boxes.length == 0 ) {
+                $(".icon").removeClass("changed");
+            } else {
+                $(boxes).each(function() {
+                    $(this).addClass("changed");
+                    $(this).fadeTo( "slow", 0, function() {
+                        $(this).html(Saver.prototype.words[Math.floor(Math.random() * Saver.prototype.words.length)]);
+                        $(this).css("color",Saver.prototype.colors[Math.floor(Math.random() * Saver.prototype.colors.length)]);
+                    });
+                    $(this).fadeTo( "slow", 1);
                 });
-                $(this).fadeTo( "slow", 1, function() {
-                    $(this).removeClass("changing");
-                });
-            });
+            }
         };
 
         return Saver;
