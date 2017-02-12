@@ -20,7 +20,7 @@
             this.container = $('#screen');
             this.setSize();
             this.drawBoxes();
-            this.intervalShowSymbol = setInterval(this.showSymbol, 500);
+            this.intervalShowSymbol = setInterval(this.showSymbol, 200);
             this.intervalChangeSymbol = setInterval(this.changeSymbol, 4000);
             return true;
         };
@@ -69,7 +69,6 @@
                         _color_previous = _color_current;
                         _symbol_previous = _symbol_current;
                         box.classList.add('icon');
-                        box.classList.add('icon-');
                         box.classList.add('hidden');
                         box.innerHTML = Saver.prototype.words[_symbol_current];
                         box.style.color = Saver.prototype.colors[_color_current];
@@ -83,7 +82,7 @@
         
         Saver.prototype.showSymbol = function() {
             var boxes;
-            boxes = $(".icon.hidden").get().sort(function(){ return Math.round(Math.random())-0.5 }).slice(0,100);
+            boxes = $(".icon.hidden").get().sort(function(){ return Math.round(Math.random())-0.5 }).slice(0,200);
             console.log(boxes.length);
             if ( boxes.length == 0 ) {
                 clearInterval(1);
@@ -96,7 +95,7 @@
         
         Saver.prototype.changeSymbol = function() {
             var boxes;
-            boxes = $(".icon:not(.changing)").get().sort(function() { return Math.round(Math.random())-0.5 }).slice(0,200);
+            boxes = $(".icon:not(.changing)").get().sort(function() { return Math.round(Math.random())-0.5 }).slice(0,400);
             $(boxes).each(function() {
                 $(this).addClass("changing");
                 $(this).fadeTo( "slow", 0, function() {
