@@ -13,23 +13,26 @@ body {
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
-  text-transform: none;
   line-height: 1;
+  padding: 5%;
+  text-transform: none;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 #screen {
+  height: 100%;
+  width: auto;
   -webkit-mask-image: url(logo_kroger.png);
   -webkit-mask-position-x: center;
-  -wwebkit-mask-position-y: center;
+  -webkit-mask-position-y: center;
   -webkit-mask-repeat: no-repeat;
-  position: absolute;
+  -webkit-mask-size: contain;
 }
 
 .hidden {
-    visibility:hidden
+    visibility:hidden;
 }
 
 .icon {
